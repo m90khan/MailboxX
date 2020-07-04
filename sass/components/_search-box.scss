@@ -1,0 +1,51 @@
+// search
+
+.search {
+  @include flex(row, space-between, center);
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba($color: $color-grey-dark-2, $alpha: 0.3);
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  background-color: $color-white;
+
+  &__button {
+    @include flex(row, center, center);
+
+    border: none;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input {
+    width: 50%;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: inherit;
+    padding: 0.5rem;
+    &:focus {
+      outline: none;
+      color: $color-grey-dark;
+    }
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: $color-grey-dark-2;
+    }
+  }
+
+  &__sort {
+    font-size: 1.4rem;
+    color: $color-grey-dark-2;
+  }
+  &__filter {
+    border: none;
+    &:focus {
+      outline: none;
+      color: $color-grey-dark;
+    }
+    & > * {
+      padding: 2rem;
+    }
+  }
+}

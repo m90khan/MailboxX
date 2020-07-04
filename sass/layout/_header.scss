@@ -1,0 +1,15 @@
+.content-header {
+  border-bottom: var(--line);
+  padding: 1rem;
+}
+.email-details {
+  padding: 2rem 4rem;
+}
+.email-content {
+  @include flex(row, space-between, center);
+
+  &__header {
+    margin-right: auto;
+    margin-left: 4rem;
+  }
+}
