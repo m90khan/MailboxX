@@ -2,7 +2,7 @@
 
 Flex-box Layout (SCSS)
 
-Live:
+Live:https://m90khan.github.io/MailboxX/
 
 The design file is inclded in the img folder.
 
