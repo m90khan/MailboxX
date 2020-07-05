@@ -1,17 +1,16 @@
 .container {
-  max-width: 140rem;
+  width: 90%;
   margin: 8rem auto;
   background-color: $color-grey-light;
   min-height: 70rem;
-  max-height: 100vh;
   padding: 2rem 4rem;
   @include flex(row, space-evenly, center);
   border-radius: 0.5rem;
+  box-shadow: var(--shadow-dark);
 
   & > * {
-    padding: 1rem;
+    padding: 2rem 1rem;
     border-radius: 0.5rem;
-    align-self: stretch;
     margin: 0.5rem;
   }
 }
@@ -19,9 +18,9 @@
 .section-nav {
   flex: 0 0 5%;
   background-color: $color-primary;
+  box-shadow: var(--shadow-light);
 }
 .section-list {
-  margin: 0.5;
   padding: 0 1rem 1rem;
   flex: 0 0 40%;
   background-color: $color-grey-light;
@@ -29,8 +28,10 @@
 .section-content {
   flex: 0 0 50%;
   background-color: $color-white;
+  box-shadow: var(--shadow-light);
 }
 .section-chat {
   flex: 0 0 5%;
   background-color: $color-primary;
+  box-shadow: var(--shadow-light);
 }

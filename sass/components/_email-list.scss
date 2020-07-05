@@ -1,7 +1,7 @@
 //email list
 .email-section {
   overflow-y: scroll;
-  height: 55rem;
+  height: 54rem;
   padding: 1rem;
 
   &::-webkit-scrollbar {
@@ -37,7 +37,7 @@
 }
 .email {
   &__list {
-    @include flex(row, space-evenly, center);
+    @include flex(row, space-between, center);
     & > * {
       margin-right: 1rem;
     }
@@ -46,38 +46,7 @@
     @include flex(column, center, center);
     position: relative;
   }
-  &__icon-box {
-    border-radius: 50%;
-    padding: 1rem;
-    @include flex(row, center, center);
 
-    &--dark {
-      background-color: $color-grey-light;
-    }
-    &--light {
-      background-color: $color-white;
-      &:hover {
-        background-color: $color-primary;
-      }
-    }
-    &:hover &__icon {
-      background-color: $color-primary;
-      fill: $color-white;
-    }
-
-    &__icon {
-      height: 1.5rem;
-      width: 1.5rem;
-      fill: $color-grey-dark-1;
-      &--light {
-        fill: $color-white;
-      }
-      &--2x {
-        height: 3rem;
-        width: 3rem;
-      }
-    }
-  }
   &__input {
     align-self: center;
     cursor: pointer;
@@ -94,7 +63,7 @@
     }
   }
   &__title {
-    font-size: var(--text);
+    font-size: var(--h3);
     font-weight: 700;
   }
   &__date {

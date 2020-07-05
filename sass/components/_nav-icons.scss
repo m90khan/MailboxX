@@ -1,0 +1,30 @@
+//navigation-icons
+
+.nav-icons {
+  @include flex(column, space-evenly, center);
+  min-height: 30rem;
+
+  & > *:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  & > *:hover &__icon {
+    fill: $color-primary-dark;
+  }
+  & > *:hover &__notification {
+    background-color: $color-primary;
+    transform: scale(1.1);
+  }
+}
+
+.nav-profile {
+  align-self: flex-end;
+  &__link {
+    &-img {
+      height: 100%;
+      width: 100%;
+      border: 0.5rem solid rgba($color-primary-dark, 0.8);
+      border-radius: 50rem;
+    }
+  }
+}

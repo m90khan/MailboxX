@@ -1,0 +1,78 @@
+.icon-box {
+  position: relative;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $color-grey-light;
+    opacity: 1;
+  }
+  &:hover &__icon {
+    fill: $color-primary;
+  }
+  &--active {
+    background-color: $color-primary-dark;
+    opacity: 1;
+  }
+
+  &--dark,
+  &--light {
+    border-radius: 100%;
+    opacity: 1;
+    padding: 1rem 1.1rem;
+  }
+  &--dark {
+    background-color: $color-grey-light;
+
+    &:hover {
+      background-color: $color-white;
+      border: 1px solid $color-primary;
+    }
+  }
+  &--light {
+    background-color: $color-white;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+  &--light:hover &__icon {
+    fill: $color-white;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-white;
+    &--light {
+      fill: $color-grey-dark;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+    &--dark {
+      fill: $color-grey-dark;
+      opacity: 0.3;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+    &--2x {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+  &__notification {
+    @include flex(row, center, center);
+    position: absolute;
+    background-color: $color-primary-light;
+    font-weight: 900;
+    font-size: 1.1rem;
+    top: 0.2rem;
+    right: 0.4rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0.1rem 0.6rem;
+    transition: all 0.2s;
+  }
+}

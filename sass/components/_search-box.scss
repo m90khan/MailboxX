@@ -2,7 +2,7 @@
 
 .search {
   @include flex(row, space-between, center);
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   border: 1px solid rgba($color: $color-grey-dark-2, $alpha: 0.3);
   font-size: 1.4rem;
   border-radius: 0.5rem;
@@ -40,12 +40,18 @@
   }
   &__filter {
     border: none;
+    option {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: $color-white;
+      background-color: $color-primary;
+      :hover {
+        background-color: $color-white;
+      }
+    }
     &:focus {
       outline: none;
       color: $color-grey-dark;
-    }
-    & > * {
-      padding: 2rem;
     }
   }
 }

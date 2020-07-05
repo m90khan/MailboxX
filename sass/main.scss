@@ -1,8 +1,7 @@
 // Files Imports
 //abstracts
 @import "./abstracts/mixins";
-@import "./abstracts/functions";
-@import "./abstracts/variables";
+ @import "./abstracts/variables";
 // base
 @import "./base/base";
 @import "./base/animations";
@@ -12,10 +11,10 @@
 @import "./components/email-list";
 @import "./components/search-box";
 @import "./components/icon-box";
+@import "./components/nav-icons";
 //layout
-@import "./layout/header";
-@import "./layout/footer";
-@import "./layout/navigation";
+@import "./layout/email-view";
+ @import "./layout/navigation";
 //pages
 @import "./pages/home";
 /* */

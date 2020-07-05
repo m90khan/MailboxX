@@ -11,16 +11,16 @@ html {
   box-sizing: border-box;
 
   font-size: 62.5%; //1rem = 10px
-  // @include respond(tab-land) {
-  //   font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%    1200px
-  // }
-  // @include respond(tab-port) {
-  //   font-size: 50%; // 1rem = 8px, 8/16 = 50%          900px
-  // }
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%    1200px
+  }
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%          900px
+  }
 
-  // @include respond(desktop) {
-  //   font-size: 75%; // 1rem = 12px, 12/16 = 75%         >=1800
-  // }
+  @include respond(desktop) {
+    font-size: 75%; // 1rem = 12px, 12/16 = 75%         >=1800
+  }
 }
 
 li,
@@ -39,5 +39,10 @@ a {
 }
 
 body {
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
   line-height: 1.5;
 }

@@ -34,28 +34,28 @@
           </div>
 
           <nav class="nav-icons">
-            <div class="nav-icons__icon-box nav-icons__icon-box--active">
-              <svg class="nav-icons__icon">
+            <div class="icon-box icon-box--active">
+              <svg class="icon-box__icon">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
-              <span class="nav-icons__notification">4</span>
+              <span class="icon-box__notification">4</span>
             </div>
-
-            <div class="nav-icons__icon-box">
-              <svg class="nav-icons__icon">
+            <div class="icon-box">
+              <svg class="icon-box__icon">
                 <use xlink:href="img/sprite.svg#icon-calendar"></use>
               </svg>
-              <span class="nav-icons__notification">1</span>
+              <span class="icon-box__notification">1</span>
             </div>
-            <div class="nav-icons__icon-box">
-              <svg class="nav-icons__icon">
+            <div class="icon-box">
+              <svg class="icon-box__icon">
                 <use xlink:href="img/sprite.svg#icon-clock2"></use>
               </svg>
             </div>
-            <div class="nav-icons__icon-box">
-              <svg class="nav-icons__icon">
+            <div class="icon-box">
+              <svg class="icon-box__icon">
                 <use xlink:href="img/sprite.svg#icon-video"></use>
               </svg>
+              <span class="icon-box__notification">2</span>
             </div>
           </nav>
           <div class="nav-profile">
@@ -75,9 +75,11 @@
           <div class="search-box">
             <form action="" class="search">
               <button class="search__button">
-                <svg class="nav-icons__icon nav-icons__icon--dark">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
-                </svg>
+                <div class="icon-box">
+                  <svg class="icon-box__icon icon-box__icon--dark">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </div>
               </button>
               <input type="text" class="search__input" placeholder="Search" />
               <span class="search__sort">&verbar; Sort By</span>
@@ -103,23 +105,26 @@
               </span>
             </h3>
             <div class="tabs__settings">
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use xlink:href="img/sprite.svg#icon-star"></use>
-                </svg>
-              </div>
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use xlink:href="img/sprite.svg#icon-params"></use>
-                </svg>
-              </div>
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use
-                    xlink:href="img/sprite.svg#icon-dots-three-horizontal"
-                  ></use>
-                </svg>
-              </div>
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg></div
+              ></a>
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use xlink:href="img/sprite.svg#icon-params"></use>
+                  </svg></div
+              ></a>
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use
+                      xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                    ></use>
+                  </svg></div
+              ></a>
             </div>
           </div>
         </div>
@@ -137,22 +142,27 @@
                   />
                   <span class="email__checkmark"></span>
                 </div>
-                <div class="email__icon-box email__icon-box--dark">
-                  <svg class="email__icon-box__icon">
+
+                <div class="icon-box icon-box--dark">
+                  <svg class="icon-box__icon">
                     <use xlink:href="img/sprite.svg#icon-paypal"></use>
                   </svg>
                 </div>
               </div>
-              <svg class="email__icon-box__icon">
-                <use xlink:href="img/sprite.svg#icon-dot-single      "></use>
+
+              <svg class="icon-box__icon icon-box__icon--dark">
+                <use
+                  xlink:href="img/sprite.svg#icon-dot-single
+                  "
+                ></use>
               </svg>
             </div>
             <div class="details">
               <div class="details__header">
-                <h3 class="details__title">We Work</h3>
+                <h3 class="details__title">PayPal</h3>
 
-                <svg class="nav-icons__icon nav-icons__icon--dark">
-                  <use xlink:href="img/sprite.svg#icon-clock2"></use>
+                <svg class="icon-box__icon icon-box__icon--dark">
+                  <use xlink:href="img/sprite.svg#icon-attachment"></use>
                 </svg>
                 <span class="details__date">Today &verbar; 08:45 PM</span>
               </div>
@@ -177,23 +187,25 @@
                   class="email__input"
                   placeholder="Search"
                 />
-                <div class="email__icon-box email__icon-box--dark">
-                  <svg class="email__icon-box__icon">
-                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                <div class="icon-box icon-box--dark">
+                  <svg class="icon-box__icon">
+                    <use xlink:href="img/sprite.svg#icon-youtube1"></use>
                   </svg>
                 </div>
               </div>
-
-              <svg class="email__icon-box__icon email__icon-box__icon--light">
-                <use xlink:href="img/sprite.svg#icon-dot-single"></use>
+              <svg class="icon-box__icon">
+                <use
+                  xlink:href="img/sprite.svg#icon-dot-single
+                  "
+                ></use>
               </svg>
             </div>
             <div class="details">
               <div class="details__header">
                 <h3 class="details__title">Youtube</h3>
 
-                <svg class="email__icon-box__icon email__icon-box__icon--light">
-                  <use xlink:href="img/sprite.svg#icon-clock2"></use>
+                <svg class="icon-box__icon icon-box__icon--dark">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
                 <span class="details__date">Today &verbar; 05:45 PM</span>
               </div>
@@ -218,23 +230,26 @@
                   class="email__input"
                   placeholder="Search"
                 />
-                <div class="email__icon-box email__icon-box--dark">
-                  <svg class="email__icon-box__icon">
-                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                <div class="icon-box icon-box--dark">
+                  <svg class="icon-box__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-linkedin
+                    "
+                    ></use>
                   </svg>
                 </div>
               </div>
-              <svg class="email__icon-box__icon">
-                <use xlink:href="img/sprite.svg#icon-dot-single"></use>
+              <svg class="icon-box__icon icon-box__icon--dark">
+                <use
+                  xlink:href="img/sprite.svg#icon-dot-single
+                  "
+                ></use>
               </svg>
             </div>
             <div class="details">
               <div class="details__header">
                 <h3 class="details__title">LinkedIn</h3>
 
-                <svg class="nav-icons__icon nav-icons__icon--dark">
-                  <use xlink:href="img/sprite.svg#icon-clock2"></use>
-                </svg>
                 <span class="details__date">Today &verbar; 03:00 PM</span>
               </div>
               <div class="details__email">
@@ -258,23 +273,27 @@
                   class="email__input"
                   placeholder="Search"
                 />
-                <div class="email__icon-box email__icon-box--dark">
-                  <svg class="email__icon-box__icon">
-                    <use xlink:href="img/sprite.svg#icon-dribbble"></use>
+                <div class="icon-box icon-box--dark">
+                  <svg class="icon-box__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-dribbble
+
+                    "
+                    ></use>
                   </svg>
                 </div>
               </div>
-              <svg class="email__icon-box__icon">
-                <use xlink:href="img/sprite.svg#icon-dot-single"></use>
+              <svg class="icon-box__icon icon-box__icon--dark">
+                <use
+                  xlink:href="img/sprite.svg#icon-dot-single
+                  "
+                ></use>
               </svg>
             </div>
             <div class="details">
               <div class="details__header">
                 <h3 class="details__title">Dribble</h3>
 
-                <svg class="nav-icons__icon nav-icons__icon--dark">
-                  <use xlink:href="img/sprite.svg#icon-clock2"></use>
-                </svg>
                 <span class="details__date">Yesterday &verbar; 02:45 PM</span>
               </div>
               <div class="details__email">
@@ -297,53 +316,64 @@
         <div class="content-header">
           <div class="tabs">
             <div class="tabs__settings">
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use
-                    xlink:href="img/sprite.svg#icon-reply-all
-                "
-                  ></use>
-                </svg>
-              </div>
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use xlink:href="img/sprite.svg#icon-reply-all"></use>
+                  </svg></div
+              ></a>
               <span class="search__sort">&verbar;</span>
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use xlink:href="img/sprite.svg#icon-reply"></use>
-                </svg>
-              </div>
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use xlink:href="img/sprite.svg#icon-reply "></use>
+                  </svg></div
+              ></a>
               <span class="search__sort">&verbar;</span>
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use xlink:href="img/sprite.svg#icon-arrow-bold-right"></use>
-                </svg>
-              </div>
+
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use
+                      xlink:href="img/sprite.svg#icon-arrow-bold-right"
+                    ></use>
+                  </svg></div
+              ></a>
               <span class="search__sort">&verbar;</span>
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use xlink:href="img/sprite.svg#icon-bin"></use>
-                </svg>
-              </div>
+
+              <span class="search__sort">&verbar;</span>
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg></div
+              ></a>
             </div>
             <div class="tabs__settings">
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use xlink:href="img/sprite.svg#icon-arrow-long-left"></use>
-                </svg>
-              </div>
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use xlink:href="img/sprite.svg#icon-arrow-long-left"></use>
+                  </svg></div
+              ></a>
               <span class="search__sort">&verbar;</span>
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use xlink:href="img/sprite.svg#icon-arrow-long-right"></use>
-                </svg>
-              </div>
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use
+                      xlink:href="img/sprite.svg#icon-arrow-long-right"
+                    ></use>
+                  </svg></div
+              ></a>
               <span class="search__sort">&verbar;</span>
-              <div class="email__icon-box email__icon-box--light">
-                <svg class="email__icon-box__icon">
-                  <use
-                    xlink:href="img/sprite.svg#icon-dots-three-vertical"
-                  ></use>
-                </svg>
-              </div>
+              <a href="#">
+                <div class="icon-box icon-box--light">
+                  <svg class="icon-box__icon icon-box__icon--light">
+                    <use
+                      xlink:href="img/sprite.svg#icon-dots-three-vertical"
+                    ></use>
+                  </svg></div
+              ></a>
             </div>
           </div>
         </div>
@@ -351,9 +381,12 @@
 
         <div class="email-details">
           <div class="email-content u-mb-2">
-            <div class="email__icon-box email__icon-box--dark">
-              <svg class="email__icon-box__icon email__icon-box__icon--2x">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            <div class="icon-box icon-box--dark">
+              <svg class="icon-box__icon icon-box__icon--2x">
+                <use
+                  xlink:href="img/sprite.svg#icon-youtube1
+                "
+                ></use>
               </svg>
             </div>
             <div class="details email-content__header">
@@ -381,7 +414,7 @@
               allowfullscreen
             ></iframe>
             <div class="details__header u-mt-2">
-              <h3 class="details__title">Hi Khan</h3>
+              <h3 class="details__title">Hi Khan,</h3>
             </div>
             <p class="details__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -396,12 +429,14 @@
       </section>
       <section class="section-chat">
         <div class="navigation">
-          <div class="nav-icons__icon-box nav-icons__icon-box--active">
-            <svg class="nav-icons__icon">
-              <use xlink:href="img/sprite.svg#icon-bubbles"></use>
-            </svg>
-            <span class="nav-icons__notification">4</span>
-          </div>
+          <a href="">
+            <div class="icon-box icon-box--active">
+              <svg class="icon-box__icon">
+                <use xlink:href="img/sprite.svg#icon-bubbles"></use>
+              </svg>
+              <span class="icon-box__notification">4</span>
+            </div></a
+          >
 
           <nav class="nav-icons">
             <div class="nav-profile">
@@ -438,11 +473,15 @@
               /></a>
             </div>
           </nav>
-          <div class="nav-icons__icon-box nav-icons__icon-box--active">
-            <svg class="nav-icons__icon">
-              <use xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
-            </svg>
-          </div>
+          <a href="">
+            <div class="icon-box icon-box--active">
+              <svg class="icon-box__icon">
+                <use
+                  xlink:href="img/sprite.svg#icon-circle-with-plus
+                "
+                ></use>
+              </svg></div
+          ></a>
         </div>
       </section>
     </div>
