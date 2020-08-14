@@ -1,17 +1,20 @@
 .navigation {
   @include flex(column, space-between, center);
-  min-height: 65rem;
+  height: 100%;
 }
 .nav-menu {
-  width: 60%;
+  width: 50%;
   &__header {
     background-color: $color-white;
     padding: 0.15rem;
     display: block;
+    transition: all 0.2s ease-in;
     &:not(:last-child) {
       margin-bottom: 0.3rem;
     }
-
+    &:nth-child(2) {
+      width: 100%;
+    }
     &:nth-child(2) {
       width: 60%;
       margin-left: auto;
@@ -23,20 +26,32 @@
   }
 
   &:hover &__header {
-    &:nth-child(2) {
-      width: 70%;
-      margin-left: 0;
-
-      margin-right: auto;
+    &:nth-child(1) {
+      width: 40%;
+      transform: translateX(-10%);
     }
     &:nth-child(3) {
-      width: 40%;
-      margin-left: 0;
-      margin-right: auto;
+      width: 100%;
+      transform: translateX(-0%);
+    }
+    &:nth-child(2) {
+      width: 60%;
+      transform: translateX(-70%);
     }
   }
 }
 
+.nav-profile {
+  justify-self: flex-end;
+  &__link {
+    &-img {
+      height: 100%;
+      width: 100%;
+      border: 0.5rem solid rgba($color-primary-dark, 0.8);
+      border-radius: 50rem;
+    }
+  }
+}
 //tabs
 
 .tabs {
@@ -44,7 +59,8 @@
   &__title {
     @include flex(row, space-between, center);
 
-    width: 30%;
+    margin-right: auto;
+    flex: 0 0 30%;
 
     &-notification {
       &-link {
@@ -65,5 +81,6 @@
   }
   &__settings {
     @include flex(row, space-between, center);
+    flex: 0 0 30%;
   }
 }

@@ -1,26 +1,25 @@
 .icon-box {
   position: relative;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border-radius: 1rem;
-  opacity: 0.6;
+  opacity: 0.5;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
   &:hover {
-    background-color: $color-grey-light;
+    // background-color: $color-grey-light;
     opacity: 1;
+    transform: scale(1.1);
   }
-  &:hover &__icon {
-    fill: $color-primary;
-  }
+
   &--active {
-    background-color: $color-primary-dark;
+    // background-color: $color-primary-dark;
     opacity: 1;
   }
 
   &--dark,
   &--light {
-    border-radius: 100%;
+    border-radius: 5rem;
     opacity: 1;
-    padding: 1rem 1.1rem;
   }
   &--dark {
     background-color: $color-grey-light;
@@ -32,13 +31,9 @@
   }
   &--light {
     background-color: $color-white;
-
-    &:hover {
-      background-color: $color-primary;
-    }
   }
   &--light:hover &__icon {
-    fill: $color-white;
+    fill: $color-primary;
   }
 
   &__icon {
@@ -55,6 +50,10 @@
       opacity: 0.3;
       height: 1.5rem;
       width: 1.5rem;
+      &:hover {
+        fill: $color-primary;
+        opacity: 1;
+      }
     }
     &--2x {
       height: 3rem;
@@ -74,5 +73,9 @@
     border-radius: 50%;
     padding: 0.1rem 0.6rem;
     transition: all 0.2s;
+
+    &--active {
+      background-color: $color-primary-dark;
+    }
   }
 }

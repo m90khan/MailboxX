@@ -1,9 +1,16 @@
 //email list
-.email-section {
-  overflow-y: scroll;
-  height: 54rem;
-  padding: 1rem;
 
+.lists {
+  height: 100%;
+}
+.email-header {
+  height: 20%;
+}
+.email-section {
+  margin-top: auto;
+  overflow-y: scroll;
+  padding: 1rem;
+  height: 85%;
   &::-webkit-scrollbar {
     width: 0.5rem;
   }
@@ -25,22 +32,70 @@
 }
 
 .email-list {
+  position: relative;
+  cursor: pointer;
   background-color: $color-white;
   padding: 2rem 1rem;
   border-radius: 0.5rem;
   @include flex(row, space-between, flex-start);
-
-  &--dark {
+  flex: 0 0 25%;
+  &:hover {
     background-color: $color-primary;
     color: $color-white;
   }
 }
+
+.email-list:hover .details__subject {
+  color: $color-white;
+}
+
+.input {
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.8rem;
+  position: relative;
+  top: -1rem;
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: 120;
+  }
+  .checkmark {
+    background: $color-grey-light-2;
+    padding: 0.9rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    border: 0.5px solid white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-in;
+    &::after {
+      content: "✔	";
+      height: 1.5rem;
+      width: 1.5rem;
+      color: $color-white;
+
+      position: absolute;
+      display: none;
+      z-index: 100;
+      top: -0.3rem;
+      left: 0.1rem;
+    }
+  }
+  input:checked ~ .checkmark {
+    background: $color-primary;
+  }
+  input:checked ~ .checkmark::after {
+    display: block;
+  }
+}
+
 .email {
+  flex: 0 0 15%;
   &__list {
     @include flex(row, space-between, center);
-    & > * {
-      margin-right: 1rem;
-    }
   }
   &__checkbox {
     @include flex(column, center, center);
@@ -54,6 +109,8 @@
 }
 
 .details {
+  flex: 0 0 82%;
+
   &__header {
     @include flex(row, space-between, center);
 
@@ -73,9 +130,6 @@
     font-size: 1.4rem;
     color: $color-primary;
     font-weight: 800;
-    &--light {
-      color: $color-white;
-    }
   }
   &__text {
     font-size: 1.4rem;

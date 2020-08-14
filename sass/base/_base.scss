@@ -4,12 +4,10 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
-  box-sizing: border-box;
-
   font-size: 62.5%; //1rem = 10px
   @include respond(tab-land) {
     font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%    1200px

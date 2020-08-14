@@ -16,15 +16,3 @@
     transform: scale(1.1);
   }
 }
-
-.nav-profile {
-  align-self: flex-end;
-  &__link {
-    &-img {
-      height: 100%;
-      width: 100%;
-      border: 0.5rem solid rgba($color-primary-dark, 0.8);
-      border-radius: 50rem;
-    }
-  }
-}
