@@ -23,467 +23,433 @@
     <title>Mailbox X-FIles | Reimagining the mailbox</title>
   </head>
   <body class="opening">
-    <div class="container">
-      <!--Navigation-->
-      <section class="section-nav">
-        <div class="navigation">
-          <div class="nav-menu">
-            <span class="nav-menu__header"></span>
-            <span class="nav-menu__header"></span>
-            <span class="nav-menu__header"></span>
-          </div>
-
-          <nav class="nav-icons">
-            <div class="icon-box icon-box--active">
-              <svg class="icon-box__icon">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
-              </svg>
-              <span class="icon-box__notification">4</span>
+    <div class="app-section">
+      <div class="container">
+        <!--Navigation-->
+        <section class="section-nav">
+          <div class="navigation">
+            <div class="nav-menu">
+              <span class="nav-menu__header"></span>
+              <span class="nav-menu__header"></span>
+              <span class="nav-menu__header"></span>
             </div>
-            <div class="icon-box">
-              <svg class="icon-box__icon">
-                <use xlink:href="img/sprite.svg#icon-calendar"></use>
-              </svg>
-              <span class="icon-box__notification">1</span>
-            </div>
-            <div class="icon-box">
-              <svg class="icon-box__icon">
-                <use xlink:href="img/sprite.svg#icon-clock2"></use>
-              </svg>
-            </div>
-            <div class="icon-box">
-              <svg class="icon-box__icon">
-                <use xlink:href="img/sprite.svg#icon-video"></use>
-              </svg>
-              <span class="icon-box__notification">2</span>
-            </div>
-          </nav>
-          <div class="nav-profile">
-            <a href="#" class="nav-profile__link"
-              ><img
-                src="img/user.jpg"
-                alt="user profile"
-                class="nav-profile__link-img"
-            /></a>
-          </div>
-        </div>
-      </section>
 
-      <!--Email List-->
-      <section class="section-list u-mb-2">
-        <div class="email-header">
-          <div class="search-box">
-            <form action="" class="search">
-              <button class="search__button">
-                <div class="icon-box">
-                  <svg class="icon-box__icon icon-box__icon--dark">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                  </svg>
-                </div>
-              </button>
-              <input type="text" class="search__input" placeholder="Search" />
-              <span class="search__sort">&verbar; Sort By</span>
-              <select
-                name="filter-emails"
-                id="filter-emails"
-                class="search__filter"
-              >
-                <option value="newest">Newest</option>
-                <option value="read">Read</option>
-                <option value="unread">Unread</option>
-                <option value="starred">Starred</option>
-              </select>
-            </form>
-          </div>
-
-          <div class="tabs u-mb-2 u-mt-2">
-            <h3 class="tabs__title">
-              <span>Inbox</span> <span class="search__sort">&verbar;</span>
-
-              <span class="tabs__title-notification">
-                <a href="#" class="tabs__title-notification-link">5 new</a>
-              </span>
-            </h3>
-            <div class="tabs__settings">
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                  </svg></div
-              ></a>
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use xlink:href="img/sprite.svg#icon-params"></use>
-                  </svg></div
-              ></a>
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use
-                      xlink:href="img/sprite.svg#icon-dots-three-horizontal"
-                    ></use>
-                  </svg></div
-              ></a>
+            <nav class="nav-icons">
+              <div class="icon-box icon-box--active">
+                <svg class="icon-box__icon">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+                <span
+                  class="icon-box__notification icon-box__notification--active"
+                  >4</span
+                >
+              </div>
+              <div class="icon-box">
+                <svg class="icon-box__icon">
+                  <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                </svg>
+                <span class="icon-box__notification">1</span>
+              </div>
+              <div class="icon-box">
+                <svg class="icon-box__icon">
+                  <use xlink:href="img/sprite.svg#icon-clock2"></use>
+                </svg>
+              </div>
+              <div class="icon-box">
+                <svg class="icon-box__icon">
+                  <use xlink:href="img/sprite.svg#icon-video"></use>
+                </svg>
+                <span class="icon-box__notification">2</span>
+              </div>
+            </nav>
+            <div class="nav-profile">
+              <a href="#" class="nav-profile__link"
+                ><img
+                  src="img/user.jpg"
+                  alt="user profile"
+                  class="nav-profile__link-img"
+              /></a>
             </div>
           </div>
-        </div>
-        <!--email list-->
-        <div class="email-section">
-          <!--list1-->
-          <div class="email-list u-mb-2">
-            <div class="email">
-              <div class="email__list">
-                <div class="email__checkbox">
+        </section>
+
+        <!--Email List-->
+        <section class="section-list u-mb-2">
+          <div class="lists">
+            <div class="email-header">
+              <div class="search-box">
+                <form action="" class="search">
+                  <button class="search__button">
+                    <div class="icon-box">
+                      <svg class="icon-box__icon icon-box__icon--dark">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                      </svg>
+                    </div>
+                  </button>
                   <input
-                    type="checkbox"
-                    class="email__input"
+                    type="text"
+                    class="search__input"
                     placeholder="Search"
                   />
-                  <span class="email__checkmark"></span>
-                </div>
-
-                <div class="icon-box icon-box--dark">
-                  <svg class="icon-box__icon">
-                    <use xlink:href="img/sprite.svg#icon-paypal"></use>
-                  </svg>
-                </div>
+                  <span class="search__sort">&verbar; Sort By</span>
+                  <select
+                    name="filter-emails"
+                    id="filter-emails"
+                    class="search__filter"
+                  >
+                    <option value="newest">Newest</option>
+                    <option value="read">Read</option>
+                    <option value="unread">Unread</option>
+                    <option value="starred">Starred</option>
+                  </select>
+                </form>
               </div>
 
-              <svg class="icon-box__icon icon-box__icon--dark">
-                <use
-                  xlink:href="img/sprite.svg#icon-dot-single
-                  "
-                ></use>
-              </svg>
-            </div>
-            <div class="details">
-              <div class="details__header">
-                <h3 class="details__title">PayPal</h3>
+              <div class="tabs u-mb-2 u-mt-2">
+                <h3 class="tabs__title">
+                  <span>Inbox</span> <span class="search__sort">&verbar;</span>
 
-                <svg class="icon-box__icon icon-box__icon--dark">
-                  <use xlink:href="img/sprite.svg#icon-attachment"></use>
-                </svg>
-                <span class="details__date">Today &verbar; 08:45 PM</span>
-              </div>
-              <div class="details__email">
-                <p class="details__subject">
-                  Your files were sent successfully to m90khan@gmai...
-                </p>
-                <p class="details__text">
-                  Thanks for using WeWork. We'll email you a confirmation as
-                  soon as your space has been confirmed.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--list2 Dark-->
-
-          <div class="email-list u-mb-2 email-list--dark">
-            <div class="email">
-              <div class="email__list">
-                <input
-                  type="checkbox"
-                  class="email__input"
-                  placeholder="Search"
-                />
-                <div class="icon-box icon-box--dark">
-                  <svg class="icon-box__icon">
-                    <use xlink:href="img/sprite.svg#icon-youtube1"></use>
-                  </svg>
+                  <span class="tabs__title-notification">
+                    <a href="#" class="tabs__title-notification-link">5 new</a>
+                  </span>
+                </h3>
+                <div class="tabs__settings">
+                  <a href="#">
+                    <div class="icon-box icon-box--light">
+                      <svg class="icon-box__icon icon-box__icon--light">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg></div
+                  ></a>
+                  <a href="#">
+                    <div class="icon-box icon-box--light">
+                      <svg class="icon-box__icon icon-box__icon--light">
+                        <use xlink:href="img/sprite.svg#icon-params"></use>
+                      </svg></div
+                  ></a>
+                  <a href="#">
+                    <div class="icon-box icon-box--light">
+                      <svg class="icon-box__icon icon-box__icon--light">
+                        <use
+                          xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                        ></use>
+                      </svg></div
+                  ></a>
                 </div>
               </div>
-              <svg class="icon-box__icon">
-                <use
-                  xlink:href="img/sprite.svg#icon-dot-single
-                  "
-                ></use>
-              </svg>
             </div>
-            <div class="details">
-              <div class="details__header">
-                <h3 class="details__title">Youtube</h3>
+            <!--email list-->
+            <div class="email-section">
+              <!--list1-->
+              <div class="email-list u-mb-2">
+                <div class="email">
+                  <div class="email__list">
+                    <div class="input">
+                      <input
+                        type="checkbox"
+                        class="email__input"
+                        placeholder="Search"
+                      />
+                      <span class="checkmark"></span>
+                    </div>
 
-                <svg class="icon-box__icon icon-box__icon--dark">
-                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                </svg>
-                <span class="details__date">Today &verbar; 05:45 PM</span>
-              </div>
-              <div class="details__email">
-                <p class="details__subject details__subject--light">
-                  MKBHD just uploaded a new video
-                </p>
-                <p class="details__text">
-                  MKBHD just uploaded a new video on How Elon musk new spaceX
-                  truck.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--list3-->
+                    <div class="icon-box icon-box--dark">
+                      <svg class="icon-box__icon">
+                        <use xlink:href="img/sprite.svg#icon-paypal"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="details__header">
+                    <h3 class="details__title">PayPal</h3>
 
-          <div class="email-list u-mb-2">
-            <div class="email">
-              <div class="email__list">
-                <input
-                  type="checkbox"
-                  class="email__input"
-                  placeholder="Search"
-                />
-                <div class="icon-box icon-box--dark">
-                  <svg class="icon-box__icon">
-                    <use
-                      xlink:href="img/sprite.svg#icon-linkedin
-                    "
-                    ></use>
-                  </svg>
+                    <svg class="icon-box__icon icon-box__icon--dark">
+                      <use xlink:href="img/sprite.svg#icon-attachment"></use>
+                    </svg>
+                    <span class="details__date">Today &verbar; 08:45 PM</span>
+                  </div>
+                  <div class="details__email">
+                    <p class="details__subject">
+                      Your files were sent successfully to m90khan@gmai...
+                    </p>
+                    <p class="details__text">
+                      Thanks for using WeWork. We'll email you a confirmation as
+                      soon as your space has been confirmed.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <svg class="icon-box__icon icon-box__icon--dark">
-                <use
-                  xlink:href="img/sprite.svg#icon-dot-single
-                  "
-                ></use>
-              </svg>
-            </div>
-            <div class="details">
-              <div class="details__header">
-                <h3 class="details__title">LinkedIn</h3>
+              <!--list2 Dark-->
 
-                <span class="details__date">Today &verbar; 03:00 PM</span>
-              </div>
-              <div class="details__email">
-                <p class="details__subject">
-                  TheWebsiteKitchen is looking for new interns at ...
-                </p>
-                <p class="details__text">
-                  Berlin - Software Engineer - Python Experience (2-4 yrs).
-                  Lahore (UI & Design) - (3+ yrs)
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--list 4-->
+              <div class="email-list u-mb-2">
+                <div class="email">
+                  <div class="email__list">
+                    <div class="input">
+                      <input
+                        type="checkbox"
+                        class="email__input"
+                        placeholder="Search"
+                      />
+                      <span class="checkmark"></span>
+                    </div>
 
-          <div class="email-list u-mb-2">
-            <div class="email">
-              <div class="email__list">
-                <input
-                  type="checkbox"
-                  class="email__input"
-                  placeholder="Search"
-                />
-                <div class="icon-box icon-box--dark">
-                  <svg class="icon-box__icon">
-                    <use
-                      xlink:href="img/sprite.svg#icon-dribbble
+                    <div class="icon-box icon-box--dark">
+                      <svg class="icon-box__icon">
+                        <use xlink:href="img/sprite.svg#icon-youtube1"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="details__header">
+                    <h3 class="details__title">Youtube</h3>
 
-                    "
-                    ></use>
-                  </svg>
+                    <svg class="icon-box__icon icon-box__icon--dark">
+                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                    <span class="details__date">Today &verbar; 05:45 PM</span>
+                  </div>
+                  <div class="details__email">
+                    <p class="details__subject details__subject--light">
+                      MKBHD just uploaded a new video
+                    </p>
+                    <p class="details__text">
+                      MKBHD just uploaded a new video on How Elon musk new
+                      spaceX truck.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <svg class="icon-box__icon icon-box__icon--dark">
-                <use
-                  xlink:href="img/sprite.svg#icon-dot-single
-                  "
-                ></use>
-              </svg>
-            </div>
-            <div class="details">
-              <div class="details__header">
-                <h3 class="details__title">Dribble</h3>
+              <!--list3-->
 
-                <span class="details__date">Yesterday &verbar; 02:45 PM</span>
+              <div class="email-list u-mb-2">
+                <div class="email">
+                  <div class="email__list">
+                    <div class="input">
+                      <input
+                        type="checkbox"
+                        class="email__input"
+                        placeholder="Search"
+                      />
+                      <span class="checkmark"></span>
+                    </div>
+
+                    <div class="icon-box icon-box--dark">
+                      <svg class="icon-box__icon">
+                        <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="details__header">
+                    <h3 class="details__title">LinkedIn</h3>
+
+                    <span class="details__date">Today &verbar; 03:00 PM</span>
+                  </div>
+                  <div class="details__email">
+                    <p class="details__subject">
+                      TheWebsiteKitchen is looking for new interns at ...
+                    </p>
+                    <p class="details__text">
+                      Berlin - Software Engineer - Python Experience (2-4 yrs).
+                      Lahore (UI & Design) - (3+ yrs)
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="details__email">
-                <p class="details__subject">
-                  A little bird told us you like design
-                </p>
-                <p class="details__text">
-                  This week’s selection of flightworthy Shots from the Dribbble
-                  community is curated by KhanX, a Berlin-based freelance brand
-                  designer
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Content Section-->
-      <section class="section-content">
-        <!--Content Header-->
-        <div class="content-header">
-          <div class="tabs">
-            <div class="tabs__settings">
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use xlink:href="img/sprite.svg#icon-reply-all"></use>
-                  </svg></div
-              ></a>
-              <span class="search__sort">&verbar;</span>
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use xlink:href="img/sprite.svg#icon-reply "></use>
-                  </svg></div
-              ></a>
-              <span class="search__sort">&verbar;</span>
+              <!--list 4-->
 
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use
-                      xlink:href="img/sprite.svg#icon-arrow-bold-right"
-                    ></use>
-                  </svg></div
-              ></a>
-              <span class="search__sort">&verbar;</span>
+              <div class="email-list u-mb-2">
+                <div class="email">
+                  <div class="email__list">
+                    <div class="input">
+                      <input
+                        type="checkbox"
+                        class="email__input"
+                        placeholder="Search"
+                      />
+                      <span class="checkmark"></span>
+                    </div>
 
-              <span class="search__sort">&verbar;</span>
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use xlink:href="img/sprite.svg#icon-bin"></use>
-                  </svg></div
-              ></a>
-            </div>
-            <div class="tabs__settings">
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use xlink:href="img/sprite.svg#icon-arrow-long-left"></use>
-                  </svg></div
-              ></a>
-              <span class="search__sort">&verbar;</span>
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use
-                      xlink:href="img/sprite.svg#icon-arrow-long-right"
-                    ></use>
-                  </svg></div
-              ></a>
-              <span class="search__sort">&verbar;</span>
-              <a href="#">
-                <div class="icon-box icon-box--light">
-                  <svg class="icon-box__icon icon-box__icon--light">
-                    <use
-                      xlink:href="img/sprite.svg#icon-dots-three-vertical"
-                    ></use>
-                  </svg></div
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!--content email-->
+                    <div class="icon-box icon-box--dark">
+                      <svg class="icon-box__icon">
+                        <use xlink:href="img/sprite.svg#icon-dribbble"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="details__header">
+                    <h3 class="details__title">Dribble</h3>
 
-        <div class="email-details">
-          <div class="email-content u-mb-2">
-            <div class="icon-box icon-box--dark">
-              <svg class="icon-box__icon icon-box__icon--2x">
-                <use
-                  xlink:href="img/sprite.svg#icon-youtube1
-                "
-                ></use>
-              </svg>
-            </div>
-            <div class="details email-content__header">
-              <div class="details__header">
-                <h3 class="details__title">Youtube</h3>
-              </div>
-              <div class="details__email">
-                <p class="details__subject">
-                  MKBHD just uploaded a new video
-                </p>
-                <p class="details__text">
-                  < noreply@youtube.com >
-                  <span class="details__date">Today &verbar; 05:45 PM</span>
-                </p>
+                    <span class="details__date"
+                      >Yesterday &verbar; 02:45 PM</span
+                    >
+                  </div>
+                  <div class="details__email">
+                    <p class="details__subject">
+                      A little bird told us you like design
+                    </p>
+                    <p class="details__text">
+                      This week’s selection of flightworthy Shots from the
+                      Dribbble community is curated by KhanX, a Berlin-based
+                      freelance brand designer
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="content-details">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/MevKTPN4ozw?controls=0"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <div class="details__header u-mt-2">
-              <h3 class="details__title">Hi Khan,</h3>
+        </section>
+        <!--Content Section-->
+        <section class="section-content">
+          <!--Content Header-->
+          <div class="content-header">
+            <div class="tabs">
+              <div class="tabs__settings">
+                <a href="#">
+                  <div class="icon-box icon-box--light">
+                    <svg class="icon-box__icon icon-box__icon--light">
+                      <use xlink:href="img/sprite.svg#icon-reply-all"></use>
+                    </svg></div
+                ></a>
+                <span class="search__sort">&verbar;</span>
+                <a href="#">
+                  <div class="icon-box icon-box--light">
+                    <svg class="icon-box__icon icon-box__icon--light">
+                      <use xlink:href="img/sprite.svg#icon-reply "></use>
+                    </svg></div
+                ></a>
+                <span class="search__sort">&verbar;</span>
+
+                <a href="#">
+                  <div class="icon-box icon-box--light">
+                    <svg class="icon-box__icon icon-box__icon--light">
+                      <use
+                        xlink:href="img/sprite.svg#icon-arrow-bold-right"
+                      ></use>
+                    </svg></div
+                ></a>
+                <span class="search__sort">&verbar;</span>
+
+                <span class="search__sort">&verbar;</span>
+                <a href="#">
+                  <div class="icon-box icon-box--light">
+                    <svg class="icon-box__icon icon-box__icon--light">
+                      <use xlink:href="img/sprite.svg#icon-bin"></use>
+                    </svg></div
+                ></a>
+              </div>
+              <div class="tabs__settings">
+                <a href="#">
+                  <div class="icon-box icon-box--light">
+                    <svg class="icon-box__icon icon-box__icon--light">
+                      <use
+                        xlink:href="img/sprite.svg#icon-arrow-long-left"
+                      ></use>
+                    </svg></div
+                ></a>
+                <span class="search__sort">&verbar;</span>
+                <a href="#">
+                  <div class="icon-box icon-box--light">
+                    <svg class="icon-box__icon icon-box__icon--light">
+                      <use
+                        xlink:href="img/sprite.svg#icon-arrow-long-right"
+                      ></use>
+                    </svg></div
+                ></a>
+                <span class="search__sort">&verbar;</span>
+                <a href="#">
+                  <div class="icon-box icon-box--light">
+                    <svg class="icon-box__icon icon-box__icon--light">
+                      <use
+                        xlink:href="img/sprite.svg#icon-dots-three-vertical"
+                      ></use>
+                    </svg></div
+                ></a>
+              </div>
             </div>
-            <p class="details__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum fermentum facilisis libero, venenatis mattis orci
-              hendrerit eget. Etiam ultrices mollis justo, nec fermentum elit
-              viverra eu. Cras at cursus turpis. Nullam magna sem, vulputate
-              quis massa nec, mollis sollicitudin dui. Sed eu massa in arcu
-              pharetra posuere. Phasellus maximus neque non ex dapibus
-            </p>
           </div>
-        </div>
-      </section>
-      <section class="section-chat">
-        <div class="navigation">
-          <a href="">
+          <!--content email-->
+
+          <div class="email-details"></div>
+        </section>
+        <section class="section-chat">
+          <div class="navigation">
             <div class="icon-box icon-box--active">
               <svg class="icon-box__icon">
                 <use xlink:href="img/sprite.svg#icon-bubbles"></use>
               </svg>
-              <span class="icon-box__notification">4</span>
-            </div></a
-          >
-
-          <nav class="nav-icons">
-            <div class="nav-profile">
-              <a href="#" class="nav-profile__link"
-                ><img
-                  src="img/user-1.jpg"
-                  alt="user profile"
-                  class="nav-profile__link-img"
-              /></a>
+              <span
+                class="icon-box__notification icon-box__notification--active"
+                >4</span
+              >
             </div>
 
-            <div class="nav-profile">
-              <a href="#" class="nav-profile__link"
-                ><img
-                  src="img/user-2.jpg"
-                  alt="user profile"
-                  class="nav-profile__link-img"
-              /></a>
-            </div>
-            <div class="nav-profile">
-              <a href="#" class="nav-profile__link"
-                ><img
-                  src="img/user-3.jpg"
-                  alt="user profile"
-                  class="nav-profile__link-img"
-              /></a>
-            </div>
-            <div class="nav-profile">
-              <a href="#" class="nav-profile__link"
-                ><img
-                  src="img/user-4.jpg"
-                  alt="user profile"
-                  class="nav-profile__link-img"
-              /></a>
-            </div>
-          </nav>
-          <a href="">
-            <div class="icon-box icon-box--active">
-              <svg class="icon-box__icon">
-                <use
-                  xlink:href="img/sprite.svg#icon-circle-with-plus
+            <nav class="nav-icons">
+              <div class="nav-profile">
+                <a href="#" class="nav-profile__link"
+                  ><img
+                    src="img/user-1.jpg"
+                    alt="user profile"
+                    class="nav-profile__link-img"
+                /></a>
+              </div>
+              <div class="nav-profile">
+                <a href="#" class="nav-profile__link"
+                  ><img
+                    src="img/user-5.jpg"
+                    alt="user profile"
+                    class="nav-profile__link-img"
+                /></a>
+              </div>
+              <div class="nav-profile">
+                <a href="#" class="nav-profile__link"
+                  ><img
+                    src="img/user-6.jpg"
+                    alt="user profile"
+                    class="nav-profile__link-img"
+                /></a>
+              </div>
+              <div class="nav-profile">
+                <a href="#" class="nav-profile__link"
+                  ><img
+                    src="img/user-2.jpg"
+                    alt="user profile"
+                    class="nav-profile__link-img"
+                /></a>
+              </div>
+              <div class="nav-profile">
+                <a href="#" class="nav-profile__link"
+                  ><img
+                    src="img/user-3.jpg"
+                    alt="user profile"
+                    class="nav-profile__link-img"
+                /></a>
+              </div>
+              <div class="nav-profile">
+                <a href="#" class="nav-profile__link"
+                  ><img
+                    src="img/user-4.jpg"
+                    alt="user profile"
+                    class="nav-profile__link-img"
+                /></a>
+              </div>
+            </nav>
+            <a href="">
+              <div class="icon-box">
+                <svg class="icon-box__icon">
+                  <use
+                    xlink:href="img/sprite.svg#icon-circle-with-plus
                 "
-                ></use>
-              </svg></div
-          ></a>
-        </div>
-      </section>
+                  ></use>
+                </svg></div
+            ></a>
+          </div>
+        </section>
+      </div>
     </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
