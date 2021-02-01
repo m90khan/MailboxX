@@ -1,7 +1,7 @@
-<br />
+### Mailbox-X | Email WebApp
 
 <p align="center">
-  <a href="https://www.thewebsitekitchen.com">
+  <a href="https://github.com/m90khan/MailboxX/">
     <img src="img/favicon.png" alt="Logo" width="120" height="120">
   </a>
 
@@ -12,7 +12,7 @@ WebAPP for mails (inspired by GMAIL) <br />
     <a href="m90khan@gmail.com"><strong>Contact Me</strong></a>
     <br />
     <br />
-    <a href="m90khan.github.io/mailboxx/">View Demo</a>
+    <a href="https://github.com/m90khan/MailboxX/">View Demo</a>
     
    </p>
 </p>
@@ -29,7 +29,7 @@ WebAPP for mails (inspired by GMAIL) <br />
 
 ### About the Project
 
-Live: https://m90khan.github.io/mailboxx/
+Live: https://github.com/m90khan/MailboxX
 <img src="./img/overview-completed.jpg">
 
 #### Process
@@ -43,9 +43,16 @@ Live: https://m90khan.github.io/mailboxx/
 
 ### Skills
 
-- HTML5
-- CSS3 - SCSS Syntax
-- JavaScript
+[<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />][youtube]
+[<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />][youtube]
+[<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />][youtube]
+[<img align="left" alt="Sass" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" />][youtube]
+[<img align="left" alt="Git" width="26px" src="https://www.w3schools.com/whatis/img_js.png" />][youtube]
+[<img align="left" alt="Git" width="26px" src="https://greensock.com/uploads/set_resources_4/84c1e40ea0e759e3f1505eb1788ddf3c_greensock-logo.svg" />][youtube]
+[<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />][youtube]
+[<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />][youtube]
+[<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />][youtube]
+<br />
 
 ---
 
@@ -54,21 +61,21 @@ Live: https://m90khan.github.io/mailboxx/
 ```javascript
 class InsertData {
   constructor() {
-    this.email = document.querySelectorAll(".email-list");
-    this.insert = document.querySelector(".email-details");
-    this.title = document.querySelector(".details__title");
+    this.email = document.querySelectorAll('.email-list');
+    this.insert = document.querySelector('.email-details');
+    this.title = document.querySelector('.details__title');
     this.events();
   }
 
   events() {
     this.email.forEach((el) => {
-      el.addEventListener("click", () => {
+      el.addEventListener('click', () => {
         this.insertHTML(el);
       });
     });
   }
   insertHTML(el) {
-    const arr = ["PayPal", "Youtube", "LinkedIn", "Dribble"];
+    const arr = ['PayPal', 'Youtube', 'LinkedIn', 'Dribble'];
 
     arr.forEach((item) => {
       if (el.children[1].children[0].children[0].innerText === item) {
@@ -108,11 +115,22 @@ new InsertData();
 
 ---
 
-### Contact
+### Connect with me:
 
-Reach out to me at one of the following places!
+[<img align="left" alt="Khan | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 
-- Website : <a href="https://thewebsitekitchen.com" target="_blank">`thewebsitekitchen.com`</a>
-- Linkedin : <a href="https://de.linkedin.com/in/khanmohsinx" target="_blank">`khanmohsinx`</a>
+[<img align="left" alt="twitter | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+[<img align="left" alt="khanmohsinx | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="khanuxd | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[<img align="left" alt="khanuxd | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/behance.svg" />][behance]
+[<img align="left" alt="khanuxd | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/dribbble.svg" />][dribble]
+<br />
 
 ---
+
+[youtube]: https://www.youtube.com/channel/UC96rVfdTKsjZpREnH6CaCOw
+[twitter]: https://twitter.com/m90khan
+[linkedin]: www.linkedin.com/in/uxdkhan
+[instagram]: https://www.instagram.com/uxd.khan/
+[behance]: https://www.behance.net/Khan_Mohsin
+[dribble]: https://dribbble.com/uxdkhan
